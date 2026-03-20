@@ -1,23 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
-    <title>Austin Sirean - Web Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austin Sirean | Frontend Developer</title>
+  <meta
+    name="description"
+    content="Frontend developer portfolio showcasing responsive websites, UI design, and clean HTML, CSS, and JavaScript projects."
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
     <nav class="navbar">
-    <ul>
-        <li class="navbar"><a href="#"><h3>Austin Sirean</h3></a></li>
-        <li class="navbar"><a href="#"><h3>Home</h3></a></li>
-        <li class="navbar"><a href="/about"><h3>About Me</h3></a></li>
-        <li class="navbar"><a href="/contact"><h3>Contact</h3></a></li>
-    </ul>
+      <a href="#home" class="logo">Austin Sirean</a>
+
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+        <div class="scroll-hint">
+            <span></span>
+        </div>
+      <div class="container hero-container">
+        <div class="hero-text fade-in">
+          <p class="eyebrow">Frontend Developer</p>
+          <h1>Building clean, responsive websites with thoughtful UI.</h1>
+          <p class="hero-description">
+            I create modern frontend projects using HTML, CSS, and JavaScript,
+            with a focus on responsive layouts, polished interfaces, and
+            real-world business design.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-container">
+        <div class="section-heading fade-in">
+          <p class="section-label">About Me</p>
+          <h2>Creating websites that look polished and feel usable.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card fade-in">
+            <p>
+              Hey! My name is Austin. I am a frontend developer
+              that has a focus on user experience and provider
+              practicality. Consumers judge and decide their interest
+              within the first 3 seconds of viewing. A business needs their stand out 
+              moment, so let's make it happen.
+            </p>
+          </div>
+
+          <div class="about-card fade-in">
+            <p>
+              My work centers on HTML, CSS, and JavaScript, with attention to
+              detail in layout, mobile responsiveness, hover states, and overall
+              UI polish. I’m especially interested in business websites,
+              landing pages, and portfolio-style projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="section-label">Featured Work</p>
+          <h2>Projects I’ve Built</h2>
+          <p class="section-copy">
+            A selection of frontend projects that highlight responsive design,
+            clean UI decisions, and real-world layout thinking.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img
+                src="./images/kalla-auto-repair-hero.png"
+                alt="Screenshot of Kalla Auto Repair homepage hero section"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>Kalla Auto Repair</h3>
+              <p>
+                A responsive business website for a local auto repair service, 
+                built with HTML, CSS, and JavaScript. The site focuses on clear service presentation, 
+                trust-building messaging, strong calls to action, and a clean dark-themed layout 
+                designed for a real-world small business.
+
+              <p class="project-focus">
+                <strong>Focus:</strong> Responsive layout, business UI design,
+                visual hierarchy, CTA placement, and polished hero design
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://asirean6506.github.io/kalla-auto-repair/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img
+                src="./images/riot-energy-hero.png"
+                alt="Screenshot of second project"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>RIOT Energy</h3>
+              <p>
+                A user friendly, mobile responsive website for a
+                fictional concept "RIOT Energy". It features product
+                standout, a call-to-action (CTA) feature, and captivating
+                colors to grab the attention of a potential consumer.
+              </p>
+
+              <p class="project-focus">
+                <strong>Focus:</strong> Responsive layout, interactive structure, product promotion, and bold landing page UI design
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://asirean6506.github.io/riot-energy-project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img
+                src="images/project-placeholder-3.jpg"
+                alt="Screenshot of third project"
+              />
+            </div>
+
+            <div class="project-content">
+              <h3>Cosmetologist </h3>
+              <p>
+                Add another project here. You can showcase a landing page,
+                redesign, business site, or any polished frontend build that
+                demonstrates layout, styling, and responsiveness.
+              </p>
+
+              <p class="project-focus">
+                <strong>Focus:</strong> Add the main skills or design goals this
+                project demonstrates.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <p class="section-label">Skills</p>
+          <h2>Tech I Work With</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card fade-in">HTML5</div>
+          <div class="skill-card fade-in">CSS3</div>
+          <div class="skill-card fade-in">JavaScript</div>
+          <div class="skill-card fade-in">Responsive Design</div>
+          <div class="skill-card fade-in">UI Design</div>
+          <div class="skill-card fade-in">Flexbox</div>
+          <div class="skill-card fade-in">CSS Grid</div>
+          <div class="skill-card fade-in">Accessibility Basics</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact-card fade-in">
+          <p class="section-label">Contact</p>
+          <h2>Let’s build something clean and effective.</h2>
+          <p>
+            Ready for hire, freelancing opportunities, and large scale projects.
+            Get in touch below, and make your dream come true.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:asirean6506@gmail.com" class="btn btn-primary">Email Me</a>
+            <a href="https://www.linkedin.com/in/asirean/" class="btn btn-secondary">LinkedIn</a>
+            <a href="https://github.com/asirean6506" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-container">
+    <p>© 2026 Austin Sirean. All rights reserved.</p>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/austin.sirean" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/asirean/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="https://x.com/austinsirean06" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+
+      const expanded = hamburger.classList.contains("active");
+      hamburger.setAttribute("aria-expanded", expanded);
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const fadeElements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    fadeElements.forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
